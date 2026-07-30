@@ -4,7 +4,7 @@ services:
     env: php
     plan: free
     branch: main
-    buildCommand: "composer install --no-dev --optimize-autoloader && npm install && npm rebuild rolldown && npm run build && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force"
+    buildCommand: "composer install --no-dev --optimize-autoloader && npm install && npm run build && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force"
     startCommand: php artisan serve --host 0.0.0.0 --port $PORT
     healthCheckPath: /
     envVars:
@@ -13,4 +13,4 @@ services:
       - key: APP_DEBUG
         value: "false"
       - key: APP_URL
-        value: https://personal-app.onrender.com
+        value: https://buriquo-web-app.onrender.com

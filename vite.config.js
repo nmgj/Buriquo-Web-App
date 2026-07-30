@@ -1,9 +1,18 @@
+import path from 'node:path';
+import { fileURLToPath, URL } from 'node:url';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from 'vite';
 
+const rootDir = fileURLToPath(new URL('.', import.meta.url));
+
 export default defineConfig({
+    resolve: {
+        alias: {
+            vendor: path.resolve(rootDir, 'vendor'),
+        },
+    },
     plugins: [
         laravel({
             input: [
