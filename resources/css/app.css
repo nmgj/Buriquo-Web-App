@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "vendor/livewire/flux/dist/flux.css";
 
 @layer properties {
     @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
