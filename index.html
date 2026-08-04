@@ -1,74 +1,175 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buriquo Web App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#home">Buriquo</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <h1>Launch your GitHub website today</h1>
-        <p>Simple, fast, and responsive static website ready for GitHub Pages deployment.</p>
-        <a class="cta-button" href="#features">See Features</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buriquo Pizza Franchise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">Buriquo Pizza</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#aboutus">About Us</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="features" id="features">
-      <div class="container">
-        <h2>What you get</h2>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Responsive design</h3>
-            <p>Looks great on desktop, tablet, and mobile with a clean modern layout.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Easy deployment</h3>
-            <p>Deploy directly to GitHub Pages using the repository root or a workflow.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Minimal setup</h3>
-            <p>Static HTML, CSS, and JavaScript so you can get your site online instantly.</p>
-          </article>
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <p class="eyebrow">Filipino Pizza Franchise</p>
+          <h1>Your Trusted Filipino Pizza Franchise</h1>
+          <p class="hero-copy">Over 40 years of quality, taste, and business excellence serving loyal customers across the Philippines.</p>
+          <a class="cta-button" href="#products">Explore Franchise Models</a>
         </div>
+      </section>
+
+      <section id="aboutus" class="section aboutus">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Why Choose Buriquo Pizza</p>
+            <h2>Built for success, trusted by generations</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">🍕</div>
+              <h3>Our Brand</h3>
+              <p>Buriquo Pizza has more than four decades of proven experience in the Philippine food industry, earning trust and loyalty nationwide.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📋</div>
+              <h3>Our Menu</h3>
+              <p>Recognized as the Filipino Pizza, our menu is designed to match local taste preferences while staying affordable.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🤝</div>
+              <h3>Our Support</h3>
+              <p>Comprehensive franchise support includes training, operations, marketing, and continuous guidance for every partner.</p>
+            </article>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-value">40</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">100+</span>
+              <span class="stat-label">Branches Nationwide</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">Filipino</span>
+              <span class="stat-label">Pizza Brand</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-value">Proven</span>
+              <span class="stat-label">Franchise System</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section products">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Menu Highlights</p>
+            <h2>Flavors that Filipino families love</h2>
+          </div>
+
+          <div class="menu-section">
+            <h3 class="menu-title">Best Sellers</h3>
+            <div class="menu-grid">
+              <article class="menu-card">
+                <div class="menu-card-media">BQ</div>
+                <h4>BQ Special</h4>
+                <p>Signature crust with cheese, beef, pepperoni, ham, mushrooms, pineapple, and bell peppers.</p>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card-media">BH</div>
+                <h4>Beef Overload</h4>
+                <p>Loaded with pure beef, pepperoni, ham, mushrooms, and savory pizza cheese.</p>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card-media">HA</div>
+                <h4>Hawaiian</h4>
+                <p>Shredded ham, juicy pineapple tidbits, and melted cheese on every slice.</p>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card-media">PP</div>
+                <h4>Pepperoni</h4>
+                <p>Classic favorite with crisp pepperoni slices and rich pizza sauce.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-section">
+            <h3 class="menu-title">Promo Picks</h3>
+            <div class="menu-grid">
+              <article class="menu-card">
+                <div class="menu-card-media">DB</div>
+                <h4>Double Best Seller</h4>
+                <p>Two popular flavors combined with extra cheese for the ultimate taste.</p>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card-media">4 in 1</div>
+                <h4>4 in 1 Pizza</h4>
+                <p>Enjoy four favorite flavors on a single crust for sharing or celebration.</p>
+              </article>
+              <article class="menu-card">
+                <div class="menu-card-media">2 in 1</div>
+                <h4>2 in 1 Pizza</h4>
+                <p>Choose any two favorite toppings in one tasty pizza.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Contact</p>
+            <h2>Order and franchising inquiries</h2>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card">
+              <h4>DINALUPIHAN, BATAAN</h4>
+              <p>San Ramon Highway (7-Eleven Munisipyo)</p>
+              <p class="contact-hours">9:30AM - 9:00PM</p>
+              <a class="contact-link" href="tel:09691364287">0969-136-4287</a>
+            </article>
+            <article class="contact-card">
+              <h4>DINALUPIHAN, BATAAN</h4>
+              <p>San Ramon Highway (Public Market)</p>
+              <p class="contact-hours">10:00AM - 8:30PM</p>
+              <a class="contact-link" href="tel:09610443988">0961-044-3988</a>
+            </article>
+            <article class="contact-card">
+              <h4>BALANGA, BATAAN</h4>
+              <p>Don Manuel Banzon Ave., Doña Francisca</p>
+              <p class="contact-hours">10:00AM - 9:00PM</p>
+              <a class="contact-link" href="tel:09324941746">0932-494-1746</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Buriquo Pizza. All Rights Reserved.</p>
+        <p>Built for GitHub Pages with a mobile-friendly static layout.</p>
       </div>
-    </section>
+    </footer>
 
-    <section class="about" id="about">
-      <div class="container">
-        <h2>About this project</h2>
-        <p>This sample website is built as a lightweight project that is ready to deploy on GitHub Pages. Add your own branding, content, and pages to make it your own.</p>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Get started</h2>
-        <p>Update the content, push to your repository, and enable GitHub Pages to publish this site automatically.</p>
-        <a class="cta-button" href="https://github.com/" target="_blank" rel="noreferrer">Open GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Buriquo Web App. Built for GitHub Pages deployment.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

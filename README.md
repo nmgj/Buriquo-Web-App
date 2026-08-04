@@ -21,3 +21,12 @@ This repository contains a sample static website project that is ready to deploy
 ## Customize
 
 Edit the HTML, CSS, and JavaScript files to add your own content, branding, and features.
+
+## Suggested next actions
+
+- Open `index.html` in your browser or use a local static server such as `npx serve .` to preview the site instantly.
+- Update the page title, branding, and copy to match your business.
+- Replace the placeholder links with your real social or contact URLs.
+- Commit and push the repository to GitHub.
+- In GitHub Repository Settings > Pages, enable Pages from the `main` branch (root) or use the `gh-pages` branch with the workflow.
+- If you want a custom domain, add a `CNAME` file to the repository root after configuring DNS.
