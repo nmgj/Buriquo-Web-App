@@ -778,56 +778,6 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-            /* ================= MODAL OPEN ================= */
-            const menuModal = document.getElementById('menuModal');
-            const modalImg = document.getElementById('modalImg');
-            const modalDesc = document.getElementById('modalDesc');
-            const modalCategory = document.getElementById('modalCategory');
-
-            document.querySelectorAll('.menu-card').forEach(card => {
-                card.addEventListener('click', () => {
-
-                    modalImg.src = card.querySelector('img').src;
-                    modalDesc.innerText = card.dataset.desc || '';
-                    modalCategory.innerText = card.dataset.category || '';
-
-                    modalImg.classList.remove('zoomed'); // reset zoom
-
-                    new bootstrap.Modal(menuModal).show();
-                });
-            });
-
-            /* ================= ZOOM ON CLICK ================= */
-            modalImg.addEventListener("click", () => {
-                modalImg.classList.toggle("zoomed");
-            });
-
-            /* ================= SWIPE SUPPORT ================= */
-            let startX = 0;
-
-            modalImg.addEventListener("touchstart", e => {
-                startX = e.touches[0].clientX;
-            });
-
-            modalImg.addEventListener("touchend", e => {
-                let endX = e.changedTouches[0].clientX;
-                let diff = startX - endX;
-
-                if (Math.abs(diff) > 60) {
-                    if (diff > 0) {
-                        console.log("👉 Swipe Left (Next)");
-                    } else {
-                        console.log("👈 Swipe Right (Prev)");
-                    }
-                }
-            });
-
-        });
-    </script>
-
 
     <!-- PRODUCT MODAL -->
     <div class="modal fade" id="menuModal" tabindex="-1">
@@ -866,3 +816,103 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.site-nav a');
+        const sections = document.querySelectorAll('main section[id]');
+
+        function setActiveLink() {
+            const offset = window.scrollY + 120;
+            sections.forEach((section) => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                const id = section.getAttribute('id');
+
+                if (offset >= top && offset < top + height) {
+                    navLinks.forEach((link) => link.classList.remove('active'));
+                    const activeLink = document.querySelector(`.site-nav a[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveLink);
+        setActiveLink();
+
+        /* ================= MODAL OPEN ================= */
+        const menuModal = document.getElementById('menuModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalCategory = document.getElementById('modalCategory');
+
+        document.querySelectorAll('.menu-card').forEach(card => {
+            card.addEventListener('click', () => {
+
+                modalImg.src = card.querySelector('img').src;
+                modalDesc.innerText = card.dataset.desc || '';
+                modalCategory.innerText = card.dataset.category || '';
+
+                modalImg.classList.remove('zoomed'); // reset zoom
+
+                new bootstrap.Modal(menuModal).show();
+            });
+        });
+
+        /* ================= ZOOM ON CLICK ================= */
+        modalImg.addEventListener("click", () => {
+            modalImg.classList.toggle("zoomed");
+        });
+
+        /* ================= SWIPE SUPPORT ================= */
+        let startX = 0;
+
+        modalImg.addEventListener("touchstart", e => {
+            startX = e.touches[0].clientX;
+        });
+
+        modalImg.addEventListener("touchend", e => {
+            let endX = e.changedTouches[0].clientX;
+            let diff = startX - endX;
+
+            if (Math.abs(diff) > 60) {
+                if (diff > 0) {
+                    console.log("👉 Swipe Left (Next)");
+                } else {
+                    console.log("👈 Swipe Right (Prev)");
+                }
+            }
+        });
+
+        const mapModal = document.getElementById('contactMapModal');
+        const mapFrame = mapModal?.querySelector('iframe');
+
+        document.querySelectorAll('.contact-location-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                if (mapFrame && button.dataset.mapSrc) {
+                    mapFrame.src = button.dataset.mapSrc;
+                }
+
+                mapModal?.classList.add('is-open');
+            });
+        });
+
+        const closeMapModal = () => mapModal?.classList.remove('is-open');
+
+        mapModal?.querySelector('.contact-modal-close')?.addEventListener('click', closeMapModal);
+
+        mapModal?.addEventListener('click', (event) => {
+            if (event.target === mapModal) {
+                closeMapModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeMapModal();
+            }
+        });
+    });
+</script>
