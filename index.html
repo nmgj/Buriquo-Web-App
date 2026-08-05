@@ -1,175 +1,869 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buriquo Pizza Franchise</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home">Buriquo Pizza</a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#aboutus">About Us</a>
-          <a href="#products">Products</a>
-          <a href="#contact">Contact Us</a>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-content">
-          <p class="eyebrow">Filipino Pizza Franchise</p>
-          <h1>Your Trusted Filipino Pizza Franchise</h1>
-          <p class="hero-copy">Over 40 years of quality, taste, and business excellence serving loyal customers across the Philippines.</p>
-          <a class="cta-button" href="#products">Explore Franchise Models</a>
-        </div>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <title>Lots’a Pizza Franchise Philippines | Start Your Pizza Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Start your pizza business with Lots’a Pizza — a trusted Filipino pizza franchise with over 40 years of experience and 100+ branches nationwide.">
+    <meta property="og:title" content="Lots’a Pizza Franchise">
+    <meta property="og:description"
+        content="Start your pizza business with Lots’a Pizza. Proven Filipino pizza franchise.">
+    <meta property="og:image" content="https://lotsapizza.com.ph/assets/img/logo.jpg">
+    <meta property="og:type" content="website">
 
-      <section id="aboutus" class="section aboutus">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin-ext/300/normal.woff2);
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/poppins/5.2.7/devanagari/300/normal.woff2);
+            unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin/300/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin/400/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin-ext/400/normal.woff2);
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url(/cf-fonts/s/poppins/5.2.7/devanagari/400/normal.woff2);
+            unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin/600/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            src: url(/cf-fonts/s/poppins/5.2.7/devanagari/600/normal.woff2);
+            unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin-ext/600/normal.woff2);
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin-ext/700/normal.woff2);
+            unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/poppins/5.2.7/devanagari/700/normal.woff2);
+            unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: url(/cf-fonts/s/poppins/5.2.7/latin/700/normal.woff2);
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            font-display: swap;
+        }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="icon" sizes="32x32" href="assets/img/favicon.png">
+    <link rel="icon" sizes="64x64" href="assets/img/favicon.png">
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Why Choose Buriquo Pizza</p>
-            <h2>Built for success, trusted by generations</h2>
-          </div>
+            <a class="navbar-brand logo-wrap" href="">
+                <img src="assets/icon_app.svg" alt="Lots'a Pizza" class="nav-logo">
+            </a>
+            <button class="navbar-toggler pizza-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+                🍕
+            </button>
 
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-icon">🍕</div>
-              <h3>Our Brand</h3>
-              <p>Buriquo Pizza has more than four decades of proven experience in the Philippine food industry, earning trust and loyalty nationwide.</p>
-            </article>
 
-            <article class="feature-card">
-              <div class="feature-icon">📋</div>
-              <h3>Our Menu</h3>
-              <p>Recognized as the Filipino Pizza, our menu is designed to match local taste preferences while staying affordable.</p>
-            </article>
-
-            <article class="feature-card">
-              <div class="feature-icon">🤝</div>
-              <h3>Our Support</h3>
-              <p>Comprehensive franchise support includes training, operations, marketing, and continuous guidance for every partner.</p>
-            </article>
-          </div>
-
-          <div class="stats-grid">
-            <div class="stat-card">
-              <span class="stat-value">40</span>
-              <span class="stat-label">Years of Experience</span>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#franchise">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="stat-card">
-              <span class="stat-value">100+</span>
-              <span class="stat-label">Branches Nationwide</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-value">Filipino</span>
-              <span class="stat-label">Pizza Brand</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-value">Proven</span>
-              <span class="stat-label">Franchise System</span>
-            </div>
-          </div>
         </div>
-      </section>
+    </nav>
 
-      <section id="products" class="section products">
+    <!-- HERO -->
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="fw-bold" data-aos="fade-up">Your Trusted Filipino Pizza Franchise</h1>
+            <p class="lead mt-3" data-aos="fade-up">Over 40 Years of Quality, Taste, and Business Excellence</p>
+        </div>
+    </section>
+
+
+    <!-- WHY LOTSA -->
+    <section id="why" class="py-5">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Menu Highlights</p>
-            <h2>Flavors that Filipino families love</h2>
-          </div>
-
-          <div class="menu-section">
-            <h3 class="menu-title">Best Sellers</h3>
-            <div class="menu-grid">
-              <article class="menu-card">
-                <div class="menu-card-media">BQ</div>
-                <h4>BQ Special</h4>
-                <p>Signature crust with cheese, beef, pepperoni, ham, mushrooms, pineapple, and bell peppers.</p>
-              </article>
-              <article class="menu-card">
-                <div class="menu-card-media">BH</div>
-                <h4>Beef Overload</h4>
-                <p>Loaded with pure beef, pepperoni, ham, mushrooms, and savory pizza cheese.</p>
-              </article>
-              <article class="menu-card">
-                <div class="menu-card-media">HA</div>
-                <h4>Hawaiian</h4>
-                <p>Shredded ham, juicy pineapple tidbits, and melted cheese on every slice.</p>
-              </article>
-              <article class="menu-card">
-                <div class="menu-card-media">PP</div>
-                <h4>Pepperoni</h4>
-                <p>Classic favorite with crisp pepperoni slices and rich pizza sauce.</p>
-              </article>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Choose Lots’a Pizza</h2>
+                <p class="text-muted">Built for success, trusted by generations</p>
             </div>
-          </div>
 
-          <div class="menu-section">
-            <h3 class="menu-title">Promo Picks</h3>
-            <div class="menu-grid">
-              <article class="menu-card">
-                <div class="menu-card-media">DB</div>
-                <h4>Double Best Seller</h4>
-                <p>Two popular flavors combined with extra cheese for the ultimate taste.</p>
-              </article>
-              <article class="menu-card">
-                <div class="menu-card-media">4 in 1</div>
-                <h4>4 in 1 Pizza</h4>
-                <p>Enjoy four favorite flavors on a single crust for sharing or celebration.</p>
-              </article>
-              <article class="menu-card">
-                <div class="menu-card-media">2 in 1</div>
-                <h4>2 in 1 Pizza</h4>
-                <p>Choose any two favorite toppings in one tasty pizza.</p>
-              </article>
+            <div class="row g-4">
+
+                <!-- OUR BRAND -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="info-card new-card">
+
+                        <div class="card-header-title">
+                            Our Brand
+                        </div>
+
+                        <div class="card-image">
+                            <img src="assets/img/our-brand.jpg" alt="Our Brand" loading="lazy">
+                        </div>
+
+                        <div class="card-body-text">
+                            <p>
+                                Lots’a Pizza has over 40 years of proven experience in the Philippine
+                                food industry, earning trust and loyalty nationwide.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- OUR MENU -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="info-card new-card">
+
+                        <div class="card-header-title">
+                            Our Menu
+                        </div>
+
+                        <div class="card-image">
+                            <img src="assets/img/our-menu.jpg" alt="Our Menu" loading="lazy">
+                        </div>
+
+                        <div class="card-body-text">
+                            <p>
+                                Recognized as the Filipino Pizza, our menu is designed to match
+                                local taste preferences while staying affordable.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- OUR SUPPORT -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="info-card new-card">
+
+                        <div class="card-header-title">
+                            Our Support
+                        </div>
+
+                        <div class="card-image">
+                            <img src="assets/img/our-support.jpg" alt="Our Support" loading="lazy">
+                        </div>
+
+                        <div class="card-body-text">
+                            <p>
+                                We provide comprehensive franchise support including training,
+                                operations, marketing, and continuous guidance.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- add card -->
+
+                <div class="row mt-5 text-center" data-aos="fade-up">
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="why-stat">
+                            <h3>40</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="why-stat">
+                            <h3>100+</h3>
+                            <p>Branches Nationwide</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="why-stat">
+                            <h3>Filipino</h3>
+                            <p>Pizza Brand</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-6 mb-4">
+                        <div class="why-stat">
+                            <h3>Proven</h3>
+                            <p>Franchise System</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- add card -->
+                <!-- add card 2    -->
+                <div class="why-commitment mt-5" data-aos="fade-up">
+                    <p>
+                        At Lots’a Pizza, we are committed to helping our franchise partners succeed
+                        through a proven business model, continuous support, and a brand trusted
+                        by Filipino families for generations.
+                    </p>
+                </div>
+                <!-- add card 2    -->
+
+
+
             </div>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <section id="contact" class="section contact">
+    <!-- FRANCHISE MODELS -->
+    <!-- FRANCHISE MODELS -->
+    <section id="franchise" class="py-5 bg-light">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-label">Contact</p>
-            <h2>Order and franchising inquiries</h2>
-          </div>
 
-          <div class="contact-grid">
-            <article class="contact-card">
-              <h4>DINALUPIHAN, BATAAN</h4>
-              <p>San Ramon Highway (7-Eleven Munisipyo)</p>
-              <p class="contact-hours">9:30AM - 9:00PM</p>
-              <a class="contact-link" href="tel:09691364287">0969-136-4287</a>
-            </article>
-            <article class="contact-card">
-              <h4>DINALUPIHAN, BATAAN</h4>
-              <p>San Ramon Highway (Public Market)</p>
-              <p class="contact-hours">10:00AM - 8:30PM</p>
-              <a class="contact-link" href="tel:09610443988">0961-044-3988</a>
-            </article>
-            <article class="contact-card">
-              <h4>BALANGA, BATAAN</h4>
-              <p>Don Manuel Banzon Ave., Doña Francisca</p>
-              <p class="contact-hours">10:00AM - 9:00PM</p>
-              <a class="contact-link" href="tel:09324941746">0932-494-1746</a>
-            </article>
-          </div>
+            <!-- TITLE -->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Our Franchise Models</h2>
+                <p class="text-muted">Choose the format that fits your business goals</p>
+            </div>
+
+            <!-- MODELS -->
+            <div class="row g-4">
+
+                <!-- KIOSK -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="franchise-box" data-title="Kiosk"
+                        data-desc="Compact, efficient, and the start of your Lots’a business journey. Minimum of 6 sqm."
+                        data-img="assets/img/franchise/kiosk.jpg" loading="lazy">
+                        <span class="franchise-tag">Kiosk</span>
+                        <img src="assets/img/franchise/kiosk.jpg" alt="Kiosk" loading="lazy">
+                        <div class="franchise-content">
+                            <p>
+                                Compact, efficient, and the start of your Lots’a business journey.<br>
+                                <strong>Minimum of 6 sqm.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STARTER DEPOT -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="franchise-box" data-title="Starter Depot"
+                        data-desc="Perfect for on-the-go communities. Minimum of 12 sqm."
+                        data-img="assets/img/franchise/starter.jpg" loading="lazy">
+                        <span class="franchise-tag">Starter Depot</span>
+                        <img src="assets/img/franchise/starter.jpg" alt="Starter Depot" loading="lazy">
+                        <div class="franchise-content">
+                            <p>
+                                Perfect for on-the-go communities.<br>
+                                <strong>Minimum of 12 sqm.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STANDARD DEPOT -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="franchise-box" data-title="Standard Depot"
+                        data-desc="Balanced space and revenue potential. Minimum of 16 sqm."
+                        data-img="assets/img/franchise/standard.jpg" loading="lazy">
+                        <span class="franchise-tag">Standard Depot</span>
+                        <img src="assets/img/franchise/standard.jpg" alt="Standard Depot" loading="lazy">
+                        <div class="franchise-content">
+                            <p>
+                                Balanced space and revenue potential.<br>
+                                <strong>Minimum of 16 sqm.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FULL STORE -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="franchise-box" data-title="Full Store"
+                        data-desc="Full dine-in experience and highest revenue potential. Minimum of 30 sqm."
+                        data-img="assets/img/franchise/full.jpg" loading="lazy">
+                        <span class="franchise-tag">Full Store</span>
+                        <img src="assets/img/franchise/full.jpg" alt="Full Store" loading="lazy">
+                        <div class="franchise-content">
+                            <p>
+                                Full dine-in experience and highest revenue potential.<br>
+                                <strong>Minimum of 30 sqm.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- APPLY BUTTON -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-danger btn-lg px-5 rounded-pill">
+                    Apply for Franchise
+                </a>
+            </div>
+
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 Buriquo Pizza. All Rights Reserved.</p>
-        <p>Built for GitHub Pages with a mobile-friendly static layout.</p>
-      </div>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Menu</h2>
+                <p class="text-muted">Filipino favorites, crafted with quality</p>
+            </div>
+            <!-- ================= BEST SELLER ================= -->
+            <div class="menu-section">
+                <h4 class="menu-title">🍕 Best Seller</h4>
+                <div class="menu-grid">
+                    <div class="menu-card" data-name="BQ Special"
+                        data-desc="A top choice! Signature crust with pizza sauce, pizza cheese, mozzarella, pure beef, pepperoni, spiced ham, mushrooms, pineapple tidbits, and green bell peppers.">
+                        <img src="assets/img/products/best-seller/bq-special.png" loading="lazy">
+                        <h6>BQ Special</h6>
+                    </div>
+
+                    <div class="menu-card" data-name="Beef Overload"
+                        data-desc="A top choice! Signature crust with pizza sauce, pizza cheese, mozzarella, pure beef, pepperoni, spiced ham, mushrooms, pineapple tidbits, and green bell peppers.">
+                        <img src="assets/img/products/best-seller/beef-overload.png" loading="lazy">
+                        <h6>Beef Overload</h6>
+                    </div>
+
+                    <div class="menu-card" data-name="Hawaiian"
+                        data-desc="Our best seller! Signature crust with pizza sauce, pizza cheese, mozzarella, shredded ham, and pineapple tidbits.">
+                        <img src="assets/img/products/best-seller/hawaiian.png" loading="lazy">
+                        <h6>Hawaiian</h6>
+                    </div>
+
+                    <div class="menu-card" data-name="Pepperoni"
+                        data-desc="Everyone's Favorite! Signature crust with pizza sauce, pizza cheese, mozzarella, and pepperoni.">
+                        <img src="assets/img/products/best-seller/pepperoni.png" loading="lazy">
+                        <h6>Pepperoni</h6>
+                    </div>
+
+                    <div class="menu-card" data-name="White Spinach"
+                        data-desc="A preferred flavor! Signature crust with pizza sauce, pizza cheese, mozzarella, pure beef, mushrooms, and green bell peppers.">
+                        <img src="assets/img/products/best-seller/spinach.png" loading="lazy">
+                        <h6>White Spinach</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= CLASSICS ================= -->
+            <div class="menu-section" data-category="classics">
+                <h4 class="menu-title">🍕 Classics</h4>
+                <div class="menu-grid">
+                    <div class="menu-card" data-name="Bacon Overload"
+                        data-desc="A preferred flavor! Signature crust with pizza sauce, pizza cheese, mozzarella, pure beef, mushrooms, and green bell peppers.">
+                        <img src="assets/img/products/classic/bacon-overload.png" loading="lazy">
+                        <h6>Bacon Overload</h6>
+                    </div>
+                    <div class="menu-card" data-name="Ham and Cheese"
+                        data-desc="A preferred flavor! Signature crust with pizza sauce, pizza cheese, mozzarella, pure beef, mushrooms, and green bell peppers.">
+                        <img src="assets/img/products/classic/ham-and-cheese.png" loading="lazy">
+                        <h6>Ham and Cheese</h6>
+                    </div>
+                    <div class="menu-card" data-name="All Cheese"
+                        data-desc="Cheese Heaven! Signature crust with cheese sauce, pizza cheese, mozzarella, and coloured sliced cheese.">
+                        <img src="assets/img/products/classic/all-cheese.png" loading="lazy">
+                        <h6>All Cheese</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= EXCLUSIVE ================= -->
+            <div class="menu-section" data-category="promo">
+                <h4 class="menu-title">🍕 Promo</h4>
+                <div class="menu-grid">
+                    <div class="menu-card" data-name="Double Best Seller"
+                        data-desc="Cheese Heaven! Signature crust with cheese sauce, pizza cheese, mozzarella, and coloured sliced cheese.">
+                        <img src="assets/img/products/promo/double-bestseller.png" loading="lazy">
+                        <h6>Double Best Seller</h6>
+                    </div>
+                    <div class="menu-card" data-name="4 in 1 Pizza"
+                        data-desc="Cheese Heaven! Signature crust with cheese sauce, pizza cheese, mozzarella, and coloured sliced cheese.">
+                        <img src="assets/img/products/promo/4-in-1.png" loading="lazy">
+                        <h6>4 in 1</h6>
+                    </div>
+                    <div class="menu-card" data-name="2 in 1 Pizza"
+                        data-desc="Your choice of 2 of your favorite flavors in one pizza.">
+                        <img src="assets/img/products/promo/2-in-1.png" loading="lazy">
+                        <h6>2 in 1</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+
+    <section class="contact-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="contact-title text-center mb-5">
+                <h1 class="fw-bold"><b>Pizza Delivery Hotlines</b></h1>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>DINALUPIHAN, BATAAN</div>
+                        <div>San Ramon Highway (7-Eleven Munisipyo)</div>
+                        <div>9:30AM - 9:00PM</div>
+                        <div class="highlight">Also available on: ordermo.ph</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:0969-136-4287" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0969-136-4287 (Smart)</span>
+                        </a>
+                        <a href="tel:09437050457" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0943-705-0457 (Sun)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.2374839830904!2d120.45902907595054!3d14.86799318565065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396663dd35dd989%3A0x27216d9d167d652a!2sBURIQUO%20PIZZA!5e0!3m2!1sen!2sph!4v1785379604566!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>DINALUPIHAN, BATAAN</div>
+                        <div>San Ramon Highway (Public Market)</div>
+                        <div>10:00AM - 8:30PM</div>
+                        <div class="highlight">Also available on: ordermo.ph</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09610443988" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0961-044-3988 (Smart)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241.01537827355617!2d120.4637782814837!3d14.867513638713435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1785391599641!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>BALANGA, BATAAN</div>
+                        <div>Don Manuel Banzon Ave., Doña Francisca (St. Joseph Hospital)</div>
+                        <div>10:00AM - 9:00PM</div>
+                        <div class="highlight">Also available on: ordermo.ph and Grab Food</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09324941746" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0932-494-1746 (Sun)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.556593856882!2d120.53909617594769!3d14.681086985814892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396410043ab4a7b%3A0xe34b6310c564f702!2sBURIQUO!5e0!3m2!1sen!2sph!4v1785391974138!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>ORION, BATAAN</div>
+                        <div>Arellano (Beside Jollibee)</div>
+                        <div>10:00AM - 9:00PM</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09542468690" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0954-246-8690 (Globe)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d625.8220591001665!2d120.57667127613837!3d14.621949368987208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1szagu%20orion!5e0!3m2!1sen!2sph!4v1785392144041!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>LIMAY, BATAAN</div>
+                        <div>Barangay Townsite (Municipal Hall)</div>
+                        <div>9:00AM - 9:00PM</div>
+                        <div class="highlight">Also available on: Limayan Food Grab and Paspas Delivery</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09297254812" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0929-725-4812 (Smart)</span>
+                        </a>
+                        <a href="tel:09543784007" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0954-378-4007 (Globe)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6541814155453!2d120.59302607594586!3d14.561757785920108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33963c401546d89f%3A0xc2a9d671643e9147!2sBURIQUO%20PIZZA!5e0!3m2!1sen!2sph!4v1785391856966!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>GUIGUINTO, BULACAN</div>
+                        <div>Valley Road, Sta. Rita (Dali Grocery)</div>
+                        <div>9:00AM - 9:00PM</div>
+                        <div class="highlight">Also available on: Foodpanda, Grab Food, GOP Delivery Service</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09437050476" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0943-705-0476 (Sun)</span>
+                        </a>
+                        <a href="tel:09456007908" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0945-600-7908 (Globe)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123403.31814698463!2d120.57857369335437!3d14.861488082742127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396530d6982abf1%3A0x20372268166c673a!2sBURIQUO!5e0!3m2!1sen!2sph!4v1785392344693!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-address">
+                        <div>PACO, MANILA</div>
+                        <div>Paz St, 681 (PS bank)</div>
+                        <div>9:00AM - 9:00PM</div>
+                        <div class="highlight">Also available on: Grab Food</div>
+                    </div>
+                    <div class="contact-phone-list">
+                        <a href="tel:09477372478" class="contact-phone-link" role="button">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0947-737-2478 (Smart)</span>
+                        </a>
+                    </div>
+                    <button type="button" class="contact-location-btn"
+                        data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d241.33454582786064!2d120.99519704118157!3d14.578965591366245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1785392439208!5m2!1sen!2sph">
+                        <i class="fa-solid fa-map-location-dot me-2"></i>
+                        Show Location
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer w-full">
+        <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="footer-grid">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        <img src="assets/icon_app.svg" alt="Buriquo Pizza" class="footer-logo" loading="lazy">
+
+                        <div class="footer-desc">
+                            <strong>Buriquo Pizza</strong>
+                            <p>
+                                Buriquo pizza is a lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
+                                consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae
+                                pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h6 class="footer-title">Quick Links</h6>
+
+                    <ul class="footer-links">
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="col-lg-3 col-md-6 footer-column">
+
+                    <h6 class="footer-title">Follow Us</h6>
+
+                    <ul class="footer-icon-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/BuriquoPizzaBataanPH" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </span>
+                                Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/buriquopizza/" target="_blank">
+                                <span class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                Instagram
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- ORDER ONLINE -->
+                <div class="col-lg-3 col-md-6 footer-column">
+
+                    <h6 class="footer-title">Order Online</h6>
+
+                    <div class="order-links">
+
+                        <a href="https://www.grab.com/ph/food/" target="_blank">
+                            <img src="assets/img/grab.jpg" alt="GrabFood">
+                            GrabFood
+                        </a>
+
+                        <a href="https://www.foodpanda.ph/" target="_blank">
+                            <img src="assets/img/foodpanda.png" alt="Foodpanda">
+                            Foodpanda
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <!-- NPC DATA PRIVACY COMPLIANCE -->
+
+            <div class="footer-compliance">
+
+                <div class="row align-items-center gy-3">
+
+                    <div class="col-lg-8 col-md-7">
+
+                        <div class="privacy-text">
+
+                            <strong>Data Privacy Compliance</strong>
+
+                            <p>
+                                Buriquo Pizza respects your privacy and is committed to protecting your personal data
+                                in accordance with the Philippine Data Privacy Act of 2012 (RA 10173).
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 text-md-end text-center">
+
+                        <div class="npc-badge">
+
+                            <img src="assets/img/npc-seal.png" alt="NPC Registered Organization" loading="lazy">
+
+                            <div class="npc-info">
+                                <span>NPC Registered Organization</span>
+                                <small>National Privacy Commission</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom text-center">
+
+                © 2026 Buriquo Pizza. All Rights Reserved.
+
+            </div>
+
+        </div>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /* ================= MODAL OPEN ================= */
+            const menuModal = document.getElementById('menuModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalDesc = document.getElementById('modalDesc');
+            const modalCategory = document.getElementById('modalCategory');
+
+            document.querySelectorAll('.menu-card').forEach(card => {
+                card.addEventListener('click', () => {
+
+                    modalImg.src = card.querySelector('img').src;
+                    modalDesc.innerText = card.dataset.desc || '';
+                    modalCategory.innerText = card.dataset.category || '';
+
+                    modalImg.classList.remove('zoomed'); // reset zoom
+
+                    new bootstrap.Modal(menuModal).show();
+                });
+            });
+
+            /* ================= ZOOM ON CLICK ================= */
+            modalImg.addEventListener("click", () => {
+                modalImg.classList.toggle("zoomed");
+            });
+
+            /* ================= SWIPE SUPPORT ================= */
+            let startX = 0;
+
+            modalImg.addEventListener("touchstart", e => {
+                startX = e.touches[0].clientX;
+            });
+
+            modalImg.addEventListener("touchend", e => {
+                let endX = e.changedTouches[0].clientX;
+                let diff = startX - endX;
+
+                if (Math.abs(diff) > 60) {
+                    if (diff > 0) {
+                        console.log("👉 Swipe Left (Next)");
+                    } else {
+                        console.log("👈 Swipe Right (Prev)");
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal fade" id="menuModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 overflow-hidden">
+
+                <div class="modal-body text-center">
+
+                    <div class="modal-image-wrapper">
+                        <img id="modalImg" src="" class="modal-product-img zoomable" loading="lazy">
+                    </div>
+
+                    <small class="text-muted d-block mt-2" id="modalCategory"></small>
+                    <p class="mt-2" id="modalDesc"></p>
+
+                </div>
+
+                <div class="modal-footer border-0">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="contact-modal" id="contactMapModal" role="dialog" aria-modal="true" aria-label="Location map">
+        <div class="contact-modal-dialog">
+            <button type="button" class="contact-modal-close" aria-label="Close map">×</button>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.2374839830904!2d120.45902907595054!3d14.86799318565065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396663dd35dd989%3A0x27216d9d167d652a!2sBURIQUO%20PIZZA!5e0!3m2!1sen!2sph!4v1785379604566!5m2!1sen!2sph"
+                loading="eager" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <script>(function () { function c() { var b = a.contentDocument || (a.contentWindow && a.contentWindow.document); if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a2623b227d1fb9ff',t:'MTc4NTg5NTQ2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+
 </html>
